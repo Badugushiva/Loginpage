@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      src = "homepage.js";
+    </script>
+  </head>
+
+  <body>
+    <div class="d-flex flex-row justify-content-center p-5" style="background-color: rgb(221, 235, 205);">
+      <div class="bg-container shadow m-5 p-5 w-50">
+        <form id="myForm" action="ckeckshedules" method="post">
+          <div class="mb-3">
+            <h1 class="heading">Schedules</h1>
+            <label for="Fullname" class="tagname">Fullname</label>
+            <input type="text" class="form-control" id="Fullname" name="fullname" />
+            <p class="error-message" id="FullnameError"></p>
+
+            <label for="events" class="tagname">Events</label>
+            <input type="text" class="form-control" id="events" name="events" />
+            <p class="error-message" id="eventsError"></p>
+          </div>
+          <div class="mb-3">
+            <label for="description" class="tagname">Discription</label><br />
+            <textarea
+              class="form-control"
+              id="description"
+              name="description"
+            ></textarea>
+            <p class="error-message" id="descriptionError"></p>
+          </div>
+          <div class="mb-3">
+            <label for="starttime" class="tagname">Start-time</label>
+            <input
+              type="date"
+              class="form-control"
+              id="starttime"
+              name="starttime"
+            />
+            <label for="endtime" class="tagname">End-time</label>
+            <input
+              type="date"
+              class="form-control"
+              id="endtime"
+              name="endtime"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="day" class="days">Day of the week</label>
+            <select class="form-control" id="day" name="day">
+              <option selected>Monday</option>
+              <option>Tuesday</option>
+              <option>wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+          </div>
+
+          <div class="d-flex flex-row">
+            <div class="mb-3">
+              <input type="submit" class="btn btn-outline-success my-2 my-sm-0 mr-5" value="Add shedule" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
