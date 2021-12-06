@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="signuppage.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="signuppage.js"></script>
+  </head>
+
+  <body>
+    <h1 class="form-heading">Sign Up</h1>
+    <div class="d-flex flex-row justify-content-center">
+      <div class="container shadow m-5">
+        <form id="myForm" action="/formdata" method="post">
+          <div class="mb-3">
+            <label for="name" class="tagname">Firstname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Fname"
+              name="firstName"
+            />
+            <p id="FnameErrMsg" class="error-message"></p>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="tagname">Lastname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Lname"
+              name="lastName"
+            />
+            <p id="LnameErrMsg" class="error-message"></p>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="tagname">Email</label>
+            <input type="text" class="form-control" id="email" name="email" />
+            <p id="emailErrMsg" class="error-message"></p>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="tagname">Password</label>
+            <input
+              type="Password"
+              class="form-control"
+              id="password"
+              name="password"
+            />
+            <p id="passwordErrMsg" class="error-message"></p>
+          </div>
+          <div class="mb-3">
+            <input
+              class="btn btn-outline-primary my-2 my-sm-0 mr-5"
+              type="submit"
+              value="Register"
+            />
+            </div>
+            <div class="d-flex flex-row">
+                <p>You already have an account please..</p>
+                <a href="http://localhost:5000/loginpage">
+                    <input type="button" class="btn btn-primary" value="Skip"></input>
+                </a>
+            </div>
+          </form>
+    
+  </body>
+</html>
